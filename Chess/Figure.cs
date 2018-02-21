@@ -22,6 +22,6 @@ namespace Chess
         blackRook = 'r',
         blackBishop = 'b',
         blackKnight = 'n',
-        whitePawn = 'p'
+        blackPawn = 'p'
     }
 }
