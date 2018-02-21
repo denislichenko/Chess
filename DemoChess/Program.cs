@@ -18,6 +18,9 @@ namespace DemoChess
             while (true) {
                 Console.WriteLine(chess.fen);
                 Print(ChessToAscii(chess));
+                foreach (string moves in chess.GetAllMoves())
+                    Console.Write(moves + "\n");
+                Console.WriteLine("> ");
                 string move = Console.ReadLine();
                 if (move == "") break;
                 chess = chess.Move(move);
